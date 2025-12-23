@@ -36,9 +36,14 @@ public class RoomTypeService {
             throw new BadRequestException("Room type with this name already exists");
         }
 
+        // Валидация коэффициентов
+        validateCoefficients(request.getMinCoefficient(), request.getMaxCoefficient());
+
         RoomType roomType = RoomType.builder()
                 .name(request.getName())
                 .description(request.getDescription())
+                .minCoefficient(request.getMinCoefficient())
+                .maxCoefficient(request.getMaxCoefficient())
                 .build();
 
         return mapToRoomTypeResponse(roomTypeRepository.save(roomType));
@@ -53,10 +58,35 @@ public class RoomTypeService {
             throw new BadRequestException("Room type with this name already exists");
         }
 
+        // Валидация коэффициентов
+        validateCoefficients(request.getMinCoefficient(), request.getMaxCoefficient());
+
         roomType.setName(request.getName());
         roomType.setDescription(request.getDescription());
+        roomType.setMinCoefficient(request.getMinCoefficient());
+        roomType.setMaxCoefficient(request.getMaxCoefficient());
 
         return mapToRoomTypeResponse(roomTypeRepository.save(roomType));
+    }
+
+    /**
+     * Валидация коэффициентов мощности помещения.
+     * Проверяет, что минимальный коэффициент больше 0,
+     * и что максимальный коэффициент (если задан) больше или равен минимальному.
+     */
+    private void validateCoefficients(java.math.BigDecimal minCoefficient, java.math.BigDecimal maxCoefficient) {
+        if (minCoefficient == null || minCoefficient.compareTo(java.math.BigDecimal.ZERO) <= 0) {
+            throw new BadRequestException("Minimum coefficient must be greater than 0");
+        }
+
+        if (maxCoefficient != null) {
+            if (maxCoefficient.compareTo(java.math.BigDecimal.ZERO) <= 0) {
+                throw new BadRequestException("Maximum coefficient must be greater than 0");
+            }
+            if (maxCoefficient.compareTo(minCoefficient) < 0) {
+                throw new BadRequestException("Maximum coefficient must be greater than or equal to minimum coefficient");
+            }
+        }
     }
 
     @Transactional
@@ -71,6 +101,9 @@ public class RoomTypeService {
                 .id(roomType.getId())
                 .name(roomType.getName())
                 .description(roomType.getDescription())
+                .minCoefficient(roomType.getMinCoefficient())
+                .maxCoefficient(roomType.getMaxCoefficient())
+                .effectiveCoefficient(roomType.getEffectiveCoefficient())
                 .build();
     }
 }

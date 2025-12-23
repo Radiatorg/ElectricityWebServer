@@ -1,7 +1,7 @@
  
 [ИНФОРМАЦИЯ О ПРОЕКТЕ] 
 Директория: D:\7semestr\Electricity\Project\electro\ 
-Дата: 20.12.2025 17:32:01.48 
+Дата: 23.12.2025  8:40:42.42 
  
  
 [ФАЙЛ: D:\7semestr\Electricity\Project\electro\pom.xml] 
@@ -585,7 +585,7 @@ Authorization: Bearer <token>
  
 [ИНФОРМАЦИЯ О ПРОЕКТЕ] 
 Директория: D:\7semestr\Electricity\Project\electro\ 
-Дата: 20.12.2025 17:32:01.48 
+Дата: 23.12.2025  8:40:42.42 
  
  
 [ФАЙЛ: D:\7semestr\Electricity\Project\electro\pom.xml] 
@@ -1250,6 +1250,7 @@ Authorization: Bearer <token>
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project> 
@@ -1264,8 +1265,9 @@ Authorization: Bearer <token>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c3d4246-8e0a-4e4c-b004-4d60642f9158" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/verchuk/electro/controller/RoomTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/verchuk/electro/security/AuthEntryPointJwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_collected_code/_collected_code.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../_collected_code/_collected_code.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../electro-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../../electro-frontend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../~$ст_задания_Верчук_2025.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1280,7 +1282,7 @@ Authorization: Bearer <token>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -1297,27 +1299,28 @@ Authorization: Bearer <token>
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ElectroApplication.executor&quot;: &quot;Run&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/7semestr/Electricity/Project/electro&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ElectroApplication.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/7semestr/Electricity/Project/electro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ElectroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="electro" />
@@ -1358,7 +1361,9 @@ Authorization: Bearer <token>
       <workItem from="1765821887419" duration="2292000" />
       <workItem from="1766086252095" duration="1684000" />
       <workItem from="1766154706591" duration="3559000" />
-      <workItem from="1766170789167" duration="3348000" />
+      <workItem from="1766170789167" duration="6159000" />
+      <workItem from="1766393507303" duration="3325000" />
+      <workItem from="1766427179981" duration="2378000" />
     </task>
     <servers />
   </component>
@@ -1399,6 +1404,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -1435,6 +1441,8 @@ public class DataInitializer implements CommandLineRunner {
                     .password(passwordEncoder.encode("admin123"))
                     .firstName("Admin")
                     .lastName("User")
+                    .phoneNumber("+79991234567")
+                    .birthDate(LocalDate.of(1990, 1, 1))
                     .enabled(true)
                     .roles(roles)
                     .build();
@@ -2500,6 +2508,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -2522,6 +2532,12 @@ public class RegisterRequest {
 
     @Size(max = 50, message = "Last name must not exceed 50 characters")
     private String lastName;
+
+    // Добавьте поля
+    @Size(max = 20)
+    private String phoneNumber;
+
+    private LocalDate birthDate;
 }
 
  
@@ -2628,6 +2644,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -2644,6 +2662,11 @@ public class UserUpdateRequest {
 
     @Size(max = 500, message = "Photo URL must not exceed 500 characters")
     private String photoUrl;
+
+    @Size(max = 20)
+    private String phoneNumber;
+
+    private LocalDate birthDate;
 }
 
  
@@ -3195,6 +3218,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -3215,6 +3239,11 @@ public class UserResponse {
     private LocalDateTime updatedAt;
     private Boolean enabled;
 
+    // Добавьте поля в класс
+    private String phoneNumber;
+    private LocalDate birthDate;
+
+    // Обновите метод fromUser
     public static UserResponse fromUser(com.verchuk.electro.model.User user) {
         return UserResponse.builder()
                 .id(user.getId())
@@ -3222,6 +3251,8 @@ public class UserResponse {
                 .email(user.getEmail())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
+                .phoneNumber(user.getPhoneNumber()) // Новое
+                .birthDate(user.getBirthDate())     // Новое
                 .photoUrl(user.getPhotoUrl())
                 .roles(user.getRoles().stream()
                         .map(role -> role.getName().name())
@@ -3890,6 +3921,8 @@ public class RoomType {
 package com.verchuk.electro.model;
 
 import jakarta.persistence.*;
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -3932,6 +3965,12 @@ public class User implements UserDetails {
 
     @Column(name = "photo_url", length = 500)
     private String photoUrl;
+
+    @Column(name = "phone_number", length = 20)
+    private String phoneNumber;
+
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -4831,6 +4870,8 @@ public class AuthService {
                 .password(passwordEncoder.encode(request.getPassword()))
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
+                .phoneNumber(request.getPhoneNumber())
+                .birthDate(request.getBirthDate())
                 .enabled(true)
                 .build();
 
@@ -6285,7 +6326,12 @@ public class UserService {
         if (request.getPhotoUrl() != null) {
             user.setPhotoUrl(request.getPhotoUrl());
         }
-
+        if (request.getPhoneNumber() != null) {
+            user.setPhoneNumber(request.getPhoneNumber());
+        }
+        if (request.getBirthDate() != null) {
+            user.setBirthDate(request.getBirthDate());
+        }
         return UserResponse.fromUser(userRepository.save(user));
     }
 
@@ -6362,6 +6408,13 @@ public class UserService {
             user.setPhotoUrl(request.getPhotoUrl());
         }
 
+        if (request.getPhoneNumber() != null) {
+            user.setPhoneNumber(request.getPhoneNumber());
+        }
+        if (request.getBirthDate() != null) {
+            user.setBirthDate(request.getBirthDate());
+        }
+
         if (roleNames != null && !roleNames.isEmpty()) {
             Set<Role> roles = new HashSet<>();
             for (String roleName : roleNames) {
@@ -6391,7 +6444,6 @@ public class UserService {
  
 package com.verchuk.electro.service;
 
-import com.verchuk.electro.dto.request.WallOpeningRequest;
 import com.verchuk.electro.dto.request.WallRequest;
 import com.verchuk.electro.dto.response.WallOpeningResponse;
 import com.verchuk.electro.dto.response.WallResponse;
@@ -6401,16 +6453,20 @@ import com.verchuk.electro.model.Wall;
 import com.verchuk.electro.model.WallOpening;
 import com.verchuk.electro.repository.FloorPlanRepository;
 import com.verchuk.electro.repository.WallRepository;
+import com.verchuk.electro.repository.RoomRepository;
+import com.verchuk.electro.repository.RoomTypeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class WallService {
+
     @Autowired
     private WallRepository wallRepository;
 
@@ -6418,8 +6474,17 @@ public class WallService {
     private FloorPlanRepository floorPlanRepository;
 
     @Autowired
+    private RoomRepository roomRepository;
+
+    @Autowired
+    private RoomTypeRepository roomTypeRepository;
+
+    @Autowired
     private UserService userService;
 
+    /**
+     * Создание одной стены (используется при обычном рисовании)
+     */
     @Transactional
     public WallResponse createWall(Long projectId, WallRequest request) {
         FloorPlan floorPlan = getFloorPlanForProject(projectId);
@@ -6432,26 +6497,30 @@ public class WallService {
                 .endY(request.getEndY())
                 .thickness(request.getThickness() != null ? request.getThickness() : BigDecimal.valueOf(20))
                 .wallType(request.getWallType())
+                .openings(new ArrayList<>())
                 .build();
 
         if (request.getOpenings() != null && !request.getOpenings().isEmpty()) {
-            final Wall wallFinal = wall; // Создаем final переменную для использования в лямбде
+            Wall finalWall = wall;
             List<WallOpening> openings = request.getOpenings().stream()
-                    .map(openingRequest -> WallOpening.builder()
-                            .wall(wallFinal)
-                            .position(openingRequest.getPosition())
-                            .width(openingRequest.getWidth())
-                            .height(openingRequest.getHeight())
-                            .openingType(openingRequest.getOpeningType())
+                    .map(opReq -> WallOpening.builder()
+                            .wall(finalWall)
+                            .position(opReq.getPosition())
+                            .width(opReq.getWidth())
+                            .height(opReq.getHeight())
+                            .openingType(opReq.getOpeningType())
                             .build())
-                    .collect(Collectors.toList());
-            wall.setOpenings(openings);
+                    .toList();
+            wall.getOpenings().addAll(openings);
         }
 
         wall = wallRepository.save(wall);
         return mapToResponse(wall);
     }
 
+    /**
+     * Обновление существующей стены
+     */
     @Transactional
     public WallResponse updateWall(Long projectId, Long wallId, WallRequest request) {
         FloorPlan floorPlan = getFloorPlanForProject(projectId);
@@ -6466,29 +6535,80 @@ public class WallService {
         wall.setStartY(request.getStartY());
         wall.setEndX(request.getEndX());
         wall.setEndY(request.getEndY());
+
         if (request.getThickness() != null) {
             wall.setThickness(request.getThickness());
         }
         wall.setWallType(request.getWallType());
 
-        // Обновление проемов
+        // Обновление проемов (очистка и замена)
         if (request.getOpenings() != null) {
             wall.getOpenings().clear();
-            final Wall wallFinal = wall; // Создаем final переменную для использования в лямбде
-            request.getOpenings().forEach(openingRequest -> {
-                WallOpening opening = WallOpening.builder()
-                        .wall(wallFinal)
-                        .position(openingRequest.getPosition())
-                        .width(openingRequest.getWidth())
-                        .height(openingRequest.getHeight())
-                        .openingType(openingRequest.getOpeningType())
-                        .build();
-                wallFinal.getOpenings().add(opening);
-            });
+            Wall finalWall = wall;
+            List<WallOpening> newOpenings = request.getOpenings().stream()
+                    .map(opReq -> WallOpening.builder()
+                            .wall(finalWall)
+                            .position(opReq.getPosition())
+                            .width(opReq.getWidth())
+                            .height(opReq.getHeight())
+                            .openingType(opReq.getOpeningType())
+                            .build())
+                    .toList();
+            wall.getOpenings().addAll(newOpenings);
         }
 
         wall = wallRepository.save(wall);
         return mapToResponse(wall);
+    }
+
+    /**
+     * Пакетное сохранение стен.
+     * Используется визуальным редактором для синхронизации всего плана сразу.
+     */
+    @Transactional
+    public List<WallResponse> saveWalls(Long projectId, List<WallRequest> requests) {
+        FloorPlan floorPlan = getFloorPlanForProject(projectId);
+
+        // Удаляем старые стены этого плана перед сохранением новых
+        wallRepository.deleteByFloorPlanId(floorPlan.getId());
+
+        List<Wall> walls = requests.stream()
+                .map(request -> {
+                    Wall wall = Wall.builder()
+                            .floorPlan(floorPlan)
+                            .startX(request.getStartX())
+                            .startY(request.getStartY())
+                            .endX(request.getEndX())
+                            .endY(request.getEndY())
+                            .thickness(request.getThickness() != null ? request.getThickness() : BigDecimal.valueOf(20))
+                            .wallType(request.getWallType())
+                            .openings(new ArrayList<>())
+                            .build();
+
+                    if (request.getOpenings() != null && !request.getOpenings().isEmpty()) {
+                        List<WallOpening> openings = request.getOpenings().stream()
+                                .map(opReq -> WallOpening.builder()
+                                        .wall(wall)
+                                        .position(opReq.getPosition())
+                                        .width(opReq.getWidth())
+                                        .height(opReq.getHeight())
+                                        .openingType(opReq.getOpeningType())
+                                        .build())
+                                .toList();
+                        wall.getOpenings().addAll(openings);
+                    }
+                    return wall;
+                })
+                .collect(Collectors.toList());
+
+        List<Wall> savedWalls = wallRepository.saveAll(walls);
+
+        // Место для вызова автоматического определения комнат, если план изменился радикально
+        // autoDetectRooms(floorPlan);
+
+        return savedWalls.stream()
+                .map(this::mapToResponse)
+                .collect(Collectors.toList());
     }
 
     @Transactional
@@ -6505,67 +6625,32 @@ public class WallService {
     }
 
     public List<WallResponse> getWallsByFloorPlan(Long floorPlanId) {
-        List<Wall> walls = wallRepository.findByFloorPlanId(floorPlanId);
-        return walls.stream()
-                .map(this::mapToResponse)
-                .collect(Collectors.toList());
-    }
-
-    @Transactional
-    public List<WallResponse> saveWalls(Long projectId, List<WallRequest> requests) {
-        FloorPlan floorPlan = getFloorPlanForProject(projectId);
-        
-        // Удаляем старые стены
-        wallRepository.deleteByFloorPlanId(floorPlan.getId());
-
-        // Создаем новые стены
-        List<Wall> walls = requests.stream()
-                .map(request -> {
-                    Wall wall = Wall.builder()
-                            .floorPlan(floorPlan)
-                            .startX(request.getStartX())
-                            .startY(request.getStartY())
-                            .endX(request.getEndX())
-                            .endY(request.getEndY())
-                            .thickness(request.getThickness() != null ? request.getThickness() : BigDecimal.valueOf(20))
-                            .wallType(request.getWallType())
-                            .build();
-
-                    if (request.getOpenings() != null && !request.getOpenings().isEmpty()) {
-                        List<WallOpening> openings = request.getOpenings().stream()
-                                .map(openingRequest -> WallOpening.builder()
-                                        .wall(wall)
-                                        .position(openingRequest.getPosition())
-                                        .width(openingRequest.getWidth())
-                                        .height(openingRequest.getHeight())
-                                        .openingType(openingRequest.getOpeningType())
-                                        .build())
-                                .collect(Collectors.toList());
-                        wall.setOpenings(openings);
-                    }
-
-                    return wall;
-                })
-                .collect(Collectors.toList());
-
-        walls = wallRepository.saveAll(walls);
-        return walls.stream()
+        return wallRepository.findByFloorPlanId(floorPlanId).stream()
                 .map(this::mapToResponse)
                 .collect(Collectors.toList());
     }
 
     public FloorPlan getFloorPlanForProject(Long projectId) {
-        var designer = userService.getCurrentUser();
         return floorPlanRepository.findByProjectId(projectId)
                 .orElseThrow(() -> new ResourceNotFoundException("FloorPlan", "projectId", projectId));
+    }
+
+    /**
+     * Заглушка для логики автоматического распознавания комнат по стенам.
+     */
+    @Transactional
+    public void autoDetectRooms(FloorPlan floorPlan) {
+        // Здесь реализуется алгоритм поиска замкнутых циклов в графе стен.
+        // На данный момент логика создания комнаты "авто-стенами" реализована на фронтенде
+        // для обеспечения моментального отклика UI.
     }
 
     private WallResponse mapToResponse(Wall wall) {
         List<WallOpeningResponse> openings = wall.getOpenings() != null
                 ? wall.getOpenings().stream()
-                        .map(this::mapOpeningToResponse)
-                        .collect(Collectors.toList())
-                : List.of();
+                .map(this::mapOpeningToResponse)
+                .collect(Collectors.toList())
+                : new ArrayList<>();
 
         return WallResponse.builder()
                 .id(wall.getId())
@@ -6588,9 +6673,7 @@ public class WallService {
                 .openingType(opening.getOpeningType())
                 .build();
     }
-}
-
- 
+} 
 ====== КОНЕЦ ФАЙЛА ====== 
  
 [ФАЙЛ: D:\7semestr\Electricity\Project\electro\src\main\resources\application.properties] 

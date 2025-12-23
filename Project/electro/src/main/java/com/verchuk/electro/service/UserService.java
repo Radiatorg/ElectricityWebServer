@@ -64,7 +64,12 @@ public class UserService {
         if (request.getPhotoUrl() != null) {
             user.setPhotoUrl(request.getPhotoUrl());
         }
-
+        if (request.getPhoneNumber() != null) {
+            user.setPhoneNumber(request.getPhoneNumber());
+        }
+        if (request.getBirthDate() != null) {
+            user.setBirthDate(request.getBirthDate());
+        }
         return UserResponse.fromUser(userRepository.save(user));
     }
 
@@ -139,6 +144,13 @@ public class UserService {
 
         if (request.getPhotoUrl() != null) {
             user.setPhotoUrl(request.getPhotoUrl());
+        }
+
+        if (request.getPhoneNumber() != null) {
+            user.setPhoneNumber(request.getPhoneNumber());
+        }
+        if (request.getBirthDate() != null) {
+            user.setBirthDate(request.getBirthDate());
         }
 
         if (roleNames != null && !roleNames.isEmpty()) {

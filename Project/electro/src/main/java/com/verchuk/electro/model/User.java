@@ -1,6 +1,8 @@
 package com.verchuk.electro.model;
 
 import jakarta.persistence.*;
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -43,6 +45,12 @@ public class User implements UserDetails {
 
     @Column(name = "photo_url", length = 500)
     private String photoUrl;
+
+    @Column(name = "phone_number", length = 20)
+    private String phoneNumber;
+
+    @Column(name = "birth_date")
+    private LocalDate birthDate;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(

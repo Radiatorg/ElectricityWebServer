@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -22,5 +24,10 @@ public class UserUpdateRequest {
 
     @Size(max = 500, message = "Photo URL must not exceed 500 characters")
     private String photoUrl;
+
+    @Size(max = 20)
+    private String phoneNumber;
+
+    private LocalDate birthDate;
 }
 

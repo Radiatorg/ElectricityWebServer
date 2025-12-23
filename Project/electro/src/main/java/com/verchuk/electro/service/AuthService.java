@@ -55,6 +55,8 @@ public class AuthService {
                 .password(passwordEncoder.encode(request.getPassword()))
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
+                .phoneNumber(request.getPhoneNumber())
+                .birthDate(request.getBirthDate())
                 .enabled(true)
                 .build();
 

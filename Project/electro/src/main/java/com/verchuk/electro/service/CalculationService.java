@@ -41,8 +41,17 @@ public class CalculationService {
                     .build();
         }
 
+        // Пересчитываем общую мощность с учетом коэффициентов помещений
         BigDecimal totalPower = projectAppliances.stream()
-                .map(pa -> pa.getTotalPower() != null ? pa.getTotalPower() : BigDecimal.ZERO)
+                .map(pa -> {
+                    BigDecimal appliancePower = pa.getTotalPower() != null ? pa.getTotalPower() : BigDecimal.ZERO;
+                    // Если прибор привязан к помещению, применяем коэффициент помещения
+                    if (pa.getRoom() != null && pa.getRoom().getRoomType() != null) {
+                        BigDecimal coefficient = pa.getRoom().getRoomType().getEffectiveCoefficient();
+                        return appliancePower.multiply(coefficient);
+                    }
+                    return appliancePower;
+                })
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
         BigDecimal totalCurrent = projectAppliances.stream()
@@ -61,9 +70,15 @@ public class CalculationService {
         List<RoomCalculationResponse> roomCalculations = appliancesByRoom.entrySet().stream()
                 .map(entry -> {
                     var room = entry.getValue().get(0).getRoom();
-                    BigDecimal roomPower = entry.getValue().stream()
+                    // Сумма мощностей всех приборов в помещении
+                    BigDecimal rawRoomPower = entry.getValue().stream()
                             .map(pa -> pa.getTotalPower() != null ? pa.getTotalPower() : BigDecimal.ZERO)
                             .reduce(BigDecimal.ZERO, BigDecimal::add);
+                    
+                    // Применяем коэффициент мощности помещения
+                    BigDecimal roomCoefficient = room.getRoomType().getEffectiveCoefficient();
+                    BigDecimal roomPower = rawRoomPower.multiply(roomCoefficient);
+                    
                     int applianceCount = entry.getValue().stream()
                             .mapToInt(pa -> pa.getQuantity() != null ? pa.getQuantity() : 0)
                             .sum();
