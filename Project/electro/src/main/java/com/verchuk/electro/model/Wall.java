@@ -41,7 +41,11 @@ public class Wall {
     private BigDecimal thickness = BigDecimal.valueOf(20); // толщина стены в см
 
     @Column(name = "wall_type", length = 50)
-    private String wallType; // "external", "internal", "load_bearing"
+    private String wallType; // "external", "internal", "load_bearing", "partition"
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "room_id")
+    private Room room; // Для внутренних стен и перегородок внутри комнаты
 
     @OneToMany(mappedBy = "wall", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<WallOpening> openings;

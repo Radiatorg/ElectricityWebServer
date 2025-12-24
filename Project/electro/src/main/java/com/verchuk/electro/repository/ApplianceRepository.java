@@ -11,7 +11,10 @@ import java.util.List;
 public interface ApplianceRepository extends JpaRepository<Appliance, Long> {
     List<Appliance> findByActiveTrue();
     
-    @Query("SELECT a FROM Appliance a WHERE a.active = true ORDER BY a.name")
+    @Query("SELECT DISTINCT a FROM Appliance a LEFT JOIN FETCH a.categories WHERE a.active = true ORDER BY a.name")
     List<Appliance> findAllActiveOrderedByName();
+    
+    @Query("SELECT DISTINCT a FROM Appliance a LEFT JOIN FETCH a.categories WHERE a.id = :id")
+    java.util.Optional<Appliance> findByIdWithCategories(Long id);
 }
 

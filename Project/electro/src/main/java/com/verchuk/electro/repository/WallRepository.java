@@ -11,6 +11,8 @@ import java.util.List;
 public interface WallRepository extends JpaRepository<Wall, Long> {
     List<Wall> findByFloorPlan(FloorPlan floorPlan);
     List<Wall> findByFloorPlanId(Long floorPlanId);
+    List<Wall> findByRoomId(Long roomId); // Для получения внутренних стен комнаты
     void deleteByFloorPlanId(Long floorPlanId);
+    void deleteByRoomId(Long roomId); // Для удаления внутренних стен при удалении комнаты
 }
 

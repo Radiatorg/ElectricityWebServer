@@ -81,6 +81,12 @@ public class SecurityConfig {
                         // Дизайнер
                         .requestMatchers("/api/designer/**").hasAnyRole("DESIGNER", "ADMIN")
 
+                        // WebSocket endpoints - разрешаем доступ с аутентификацией через query параметр
+                        // JwtAuthenticationFilter обработает токен из query параметра для /ws/info
+                        .requestMatchers("/ws/info").authenticated()
+                        .requestMatchers("/ws/**").authenticated()
+                        .requestMatchers("/api/chat/**").hasAnyRole("DESIGNER", "ADMIN")
+
                         .anyRequest().authenticated()
                 );
 

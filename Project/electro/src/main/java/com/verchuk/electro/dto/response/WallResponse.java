@@ -20,6 +20,7 @@ public class WallResponse {
     private BigDecimal endY;
     private BigDecimal thickness;
     private String wallType;
+    private Long roomId; // Для внутренних стен и перегородок внутри комнаты
     private List<WallOpeningResponse> openings;
 }
 

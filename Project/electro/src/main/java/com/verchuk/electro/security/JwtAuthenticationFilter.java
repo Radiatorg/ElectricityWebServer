@@ -44,10 +44,18 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     }
 
     private String parseJwt(HttpServletRequest request) {
+        // Сначала проверяем заголовок Authorization
         String headerAuth = request.getHeader("Authorization");
         if (StringUtils.hasText(headerAuth) && headerAuth.startsWith("Bearer ")) {
             return headerAuth.substring(7);
         }
+        
+        // Для WebSocket запросов проверяем query параметр token
+        String token = request.getParameter("token");
+        if (StringUtils.hasText(token)) {
+            return token;
+        }
+        
         return null;
     }
 }

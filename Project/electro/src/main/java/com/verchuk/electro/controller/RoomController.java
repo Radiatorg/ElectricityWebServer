@@ -44,5 +44,12 @@ public class RoomController {
         roomService.deleteRoom(projectId, roomId);
         return ResponseEntity.ok(ApiResponse.success("Room deleted successfully"));
     }
+
+    @GetMapping("/{roomId}/walls")
+    public ResponseEntity<List<com.verchuk.electro.dto.response.WallResponse>> getRoomWalls(
+            @PathVariable Long projectId, 
+            @PathVariable Long roomId) {
+        return ResponseEntity.ok(roomService.getRoomWalls(projectId, roomId));
+    }
 }
 

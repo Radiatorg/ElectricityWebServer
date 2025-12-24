@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -18,8 +19,12 @@ public class ApplianceResponse {
     private BigDecimal powerConsumption;
     private BigDecimal voltage;
     private BigDecimal current;
+    @Deprecated // Оставляем для обратной совместимости
     private String category;
+    private List<CategoryResponse> categories; // Новое поле для множественных категорий
     private String imageUrl;
+    private BigDecimal width; // ширина прибора в см
+    private BigDecimal height; // высота прибора в см
     private Boolean active;
 }
 

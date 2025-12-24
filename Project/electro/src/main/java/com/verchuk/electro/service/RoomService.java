@@ -2,6 +2,7 @@ package com.verchuk.electro.service;
 
 import com.verchuk.electro.dto.request.RoomRequest;
 import com.verchuk.electro.dto.response.RoomResponse;
+import com.verchuk.electro.dto.response.WallResponse;
 import com.verchuk.electro.exception.ResourceNotFoundException;
 import com.verchuk.electro.model.Project;
 import com.verchuk.electro.model.Room;
@@ -9,6 +10,7 @@ import com.verchuk.electro.model.RoomType;
 import com.verchuk.electro.repository.ProjectRepository;
 import com.verchuk.electro.repository.RoomRepository;
 import com.verchuk.electro.repository.RoomTypeRepository;
+import com.verchuk.electro.service.WallService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +31,9 @@ public class RoomService {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private WallService wallService;
 
     public List<RoomResponse> getRoomsByProject(Long projectId) {
         Project project = getProjectForCurrentUser(projectId);
@@ -95,7 +100,19 @@ public class RoomService {
         Project project = getProjectForCurrentUser(projectId);
         Room room = roomRepository.findByIdAndProject(roomId, project)
                 .orElseThrow(() -> new ResourceNotFoundException("Room", "id", roomId));
+        // Удаляем внутренние стены комнаты перед удалением комнаты
+        wallService.deleteWallsByRoom(projectId, roomId);
         roomRepository.delete(room);
+    }
+
+    /**
+     * Получение внутренних стен и перегородок комнаты
+     */
+    public List<WallResponse> getRoomWalls(Long projectId, Long roomId) {
+        Project project = getProjectForCurrentUser(projectId);
+        Room room = roomRepository.findByIdAndProject(roomId, project)
+                .orElseThrow(() -> new ResourceNotFoundException("Room", "id", roomId));
+        return wallService.getWallsByRoom(projectId, roomId);
     }
 
     private Project getProjectForCurrentUser(Long projectId) {

@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -32,9 +33,20 @@ public class ApplianceRequest {
     private BigDecimal current;
 
     @Size(max = 50, message = "Category must not exceed 50 characters")
+    @Deprecated // Оставляем для обратной совместимости
     private String category;
+
+    private List<Long> categoryIds; // Новое поле для множественных категорий
+    
+    private List<String> newCategoryNames; // Новые категории для создания
 
     @Size(max = 500, message = "Image URL must not exceed 500 characters")
     private String imageUrl;
+
+    @Positive(message = "Width must be positive")
+    private BigDecimal width; // ширина прибора в см
+
+    @Positive(message = "Height must be positive")
+    private BigDecimal height; // высота прибора в см
 }
 
